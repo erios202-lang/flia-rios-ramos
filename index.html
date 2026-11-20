@@ -3,46 +3,113 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>FLIA. RÍOS RAMOS</title>
+
+  <!-- Configuración para iPhone -->
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="FLIA. RÍOS RAMOS">
   <meta name="theme-color" content="#442065">
-  <title>FLIA. RÍOS RAMOS</title>
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="icon" href="icon.png">
+
+  <!-- Logo original de la familia -->
+  <link rel="apple-touch-icon"
+        href="Gestión de Préstamos Familiar en Dorado.png">
+  <link rel="icon" type="image/png"
+        href="Gestión de Préstamos Familiar en Dorado.png">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
+      min-height: 100dvh;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       background: #442065;
-      color: #fff;
       font-family: Arial, sans-serif;
+      color: white;
       text-align: center;
     }
-    .contenedor { padding: 24px; }
-    h1 { color: #e3c477; }
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 25px;
+
+    .contenedor {
+      width: 100%;
+      max-width: 420px;
+      padding: 30px 22px;
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 22px;
+      border-radius: 22px;
+    }
+
+    h1 {
+      color: #e3c477;
+      font-size: 27px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .boton {
+      display: block;
+      width: 100%;
+      padding: 17px 20px;
       background: #e3c477;
       color: #34204c;
-      border-radius: 12px;
+      border-radius: 14px;
+      font-size: 16px;
       font-weight: bold;
       text-decoration: none;
     }
+
+    .pie {
+      margin-top: 35px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
   </style>
 </head>
+
 <body>
-  <div class="contenedor">
+
+  <main class="contenedor">
+
+    <img
+      class="logo"
+      src="Gestión de Préstamos Familiar en Dorado.png"
+      alt="Logo FLIA. RÍOS RAMOS">
+
     <h1>FLIA. RÍOS RAMOS</h1>
-    <p>Control Familiar de Préstamos</p>
-    <a href="https://script.google.com/macros/s/AKfycbx_Gr7hlDSWWFY3tr8SmIlOA-yqkkgmPEiRnhjsOCIIiWpUXbG5q-05gHnA8SXXps45/exec">
+
+    <p>
+      Control Familiar de Préstamos
+    </p>
+
+    <a
+      class="boton"
+      href="https://script.google.com/macros/s/AKfycbx_Gr7hlDSWWFY3tr8SmIlOA-yqkkgmPEiRnhjsOCIIiWpUXbG5q-05gHnA8SXXps45/exec">
       INGRESAR A LA APLICACIÓN
     </a>
-  </div>
+
+    <div class="pie">
+      Gestión familiar privada
+    </div>
+
+  </main>
+
 </body>
 </html>
